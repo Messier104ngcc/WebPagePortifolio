@@ -1,5 +1,298 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "rojetos";
 }
+
+
+<div class="container my-5">
+    <div id="home" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="container">
+            <div class="col">
+                <h2 class="title d-flex justify-content-center">PROJETOS</h2>
+                <div class="underline mb-5"></div>
+            </div>
+            <div class="album py-5 bg-body-tertiary mb-3 h-100">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="/img/projeto1.png" class="img-fluid" alt="Projeto">
+                                <div class="card-body">
+                                    <p class="card-text">Sistema de gerenciamento de despesas pessoais, com foco no design fontend.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Vizualizar
+                                            </button>
+                                        </div>
+                                        <small class="text-body-secondary">24/11/2024</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                                Vizualizar
+                                            </button>
+                                        </div>
+                                        <small class="text-body-secondary">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                                Vizualizar
+                                            </button>
+                                        </div>
+                                        <small class="text-body-secondary">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal-dialog">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" style="width: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Detalhes do Projeto</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 align-items-start">
+                            <div class="row mb-2">
+                                <h5 class="modal-title mb-5" id="exampleModalLabel">Sistema de Gerenciamento de </h5>
+                                <div class="col-md-6 mb-3">
+                                    <img src="/img/inicio.png" alt="Home" class="img-fluid" />
+                                </div>
+                                <div class="col-md-5 ms-0">
+                                    <p>
+                                        ​O Sistema de Despesas Pessoais é uma aplicação web desenvolvida em ASP.NET que tem como objetivo auxiliar os usuários no gerenciamento de suas finanças pessoais. Com uma interface intuitiva e responsiva, o sistema permite que os usuários se cadastrem, visualizem e analisem seus gastos de forma prática e eficiente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row m-3 mb-5 ms-0">                              
+                                <div class="col-md-6">
+                                   <p>
+                                        ​Front-end Para a construção da Interface, utilizei o Bootstrap, um framework poderoso que fornece um design responsivo e moderno. Com uma paleta de cores atraente e uma navegação simplificada, garantindo assim a melhor experiência ao usuário. O desenvolvimento em HTML, CSS e JavaScript complementa a estrutura do Bootstrap, permitindo interações dinâmicas com os dados.
+                                   </p>
+                                </div>
+                                <div class="col-md-6">                                   
+                                    <img src="/img/meio.png" alt="Home" class="img-fluid" />
+                                </div>
+                            </div>   
+                            
+                            <div class="row mb-5">
+                                <h5 class="modal-title mb-2" id="exampleModalLabel">Funcionalidades Principais : </h5>
+                                <div class="col-md-6">
+                                    <img src="/img/fim.png" alt="Home" class="img-fluid" />
+                                </div>
+                                <div class="col-md-6 ms-0">
+                                    <ul>
+                                        <li>
+                                            Registro de Despesas: Permite que os usuários informem detalhes sobre suas despesas, categorizando-as para uma melhor visualização.
+                                        </li>
+                                        <li>
+                                            Relatórios e Gráficos: O sistema gera relatórios em tempo real, permitindo que os usuários analisem seus gastos através de gráficos e tabelas (Frontend).
+                                        </li>
+                                        <li>
+                                            Autenticação de Usuários: Os usuários podem criar contas e fazer login, garantindo que seus dados sejam mantidos em segurança.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row mb-5">
+                                <h5 class="modal-title mb-5" id="exampleModalLabel">Conclusão : </h5>
+                                <div class="col-md-8">
+                                    <p class="mb-5">
+                                        ​O Sistema de Despesas Pessoais representa uma solução para quem deseja ter um maior controle sobre suas despesas pessoais. Com uma interface amigável e uma estrutura sólida, este projeto combina as melhores práticas de desenvolvimento web, oferecendo aos usuários uma ferramenta para o gerenciamento de suas despesas diárias. Estou entusiasmado com as possibilidades e melhorias futuras que podem ser inovadoras com o feedback dos usuários. Sinta-se à vontade para modificar ou adicionar informações que você achar conveniente! Se precisar de mais detalhes ou de outra parte do projeto, é só avisar.
+                                    </p>
+                                    <a href="https://github.com/Messier104ngcc" target="_blank" class="text-decoration-none">
+                                        <i class="bi bi-git mx-2"></i> Repositório Git
+                                    </a>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" style="width: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Detalhes do Projeto</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row row-cols-1 align-items-start">
+                        <div class="row mb-2">
+                            <h5 class="modal-title mb-5" id="exampleModalLabel">Sistema de Gerenciamento de </h5>
+                            <div class="col-md-6 mb-3">
+                                <img src="/img/inicio.png" alt="Home" class="img-fluid" />
+                            </div>
+                            <div class="col-md-5 ms-0">
+                                <p>
+                                    ​O Sistema de Despesas Pessoais é uma aplicação web desenvolvida em ASP.NET que tem como objetivo auxiliar os usuários no gerenciamento de suas finanças pessoais. Com uma interface intuitiva e responsiva, o sistema permite que os usuários se cadastrem, visualizem e analisem seus gastos de forma prática e eficiente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row m-3 mb-5 ms-0">
+                            <div class="col-md-6">
+                                <p>
+                                    ​Front-end Para a construção da Interface, utilizei o Bootstrap, um framework poderoso que fornece um design responsivo e moderno. Com uma paleta de cores atraente e uma navegação simplificada, garantindo assim a melhor experiência ao usuário. O desenvolvimento em HTML, CSS e JavaScript complementa a estrutura do Bootstrap, permitindo interações dinâmicas com os dados.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/img/meio.png" alt="Home" class="img-fluid" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <h5 class="modal-title mb-2" id="exampleModalLabel">Funcionalidades Principais : </h5>
+                            <div class="col-md-6">
+                                <img src="/img/fim.png" alt="Home" class="img-fluid" />
+                            </div>
+                            <div class="col-md-6 ms-0">
+                                <ul>
+                                    <li>
+                                        Registro de Despesas: Permite que os usuários informem detalhes sobre suas despesas, categorizando-as para uma melhor visualização.
+                                    </li>
+                                    <li>
+                                        Relatórios e Gráficos: O sistema gera relatórios em tempo real, permitindo que os usuários analisem seus gastos através de gráficos e tabelas (Frontend).
+                                    </li>
+                                    <li>
+                                        Autenticação de Usuários: Os usuários podem criar contas e fazer login, garantindo que seus dados sejam mantidos em segurança.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <h5 class="modal-title mb-5" id="exampleModalLabel">Conclusão : </h5>
+                            <div class="col-md-8">
+                                <p class="mb-5">
+                                    ​O Sistema de Despesas Pessoais representa uma solução para quem deseja ter um maior controle sobre suas despesas pessoais. Com uma interface amigável e uma estrutura sólida, este projeto combina as melhores práticas de desenvolvimento web, oferecendo aos usuários uma ferramenta para o gerenciamento de suas despesas diárias. Estou entusiasmado com as possibilidades e melhorias futuras que podem ser inovadoras com o feedback dos usuários. Sinta-se à vontade para modificar ou adicionar informações que você achar conveniente! Se precisar de mais detalhes ou de outra parte do projeto, é só avisar.
+                                </p>
+                                <a href="https://github.com/Messier104ngcc" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-git mx-2"></i> Repositório Git
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" style="width: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Detalhes do Projeto</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 align-items-start">
+                            <div class="row mb-2">
+                                <h5 class="modal-title mb-5" id="exampleModalLabel">Sistema de Gerenciamento de </h5>
+                                <div class="col-md-6 mb-3">
+                                    <img src="/img/inicio.png" alt="Home" class="img-fluid" />
+                                </div>
+                                <div class="col-md-5 ms-0">
+                                    <p>
+                                        ​O Sistema de Despesas Pessoais é uma aplicação web desenvolvida em ASP.NET que tem como objetivo auxiliar os usuários no gerenciamento de suas finanças pessoais. Com uma interface intuitiva e responsiva, o sistema permite que os usuários se cadastrem, visualizem e analisem seus gastos de forma prática e eficiente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row m-3 mb-5 ms-0">
+                                <div class="col-md-6">
+                                    <p>
+                                        ​Front-end Para a construção da Interface, utilizei o Bootstrap, um framework poderoso que fornece um design responsivo e moderno. Com uma paleta de cores atraente e uma navegação simplificada, garantindo assim a melhor experiência ao usuário. O desenvolvimento em HTML, CSS e JavaScript complementa a estrutura do Bootstrap, permitindo interações dinâmicas com os dados.
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="/img/meio.png" alt="Home" class="img-fluid" />
+                                </div>
+                            </div>
+
+                            <div class="row mb-5">
+                                <h5 class="modal-title mb-2" id="exampleModalLabel">Funcionalidades Principais : </h5>
+                                <div class="col-md-6">
+                                    <img src="/img/fim.png" alt="Home" class="img-fluid" />
+                                </div>
+                                <div class="col-md-6 ms-0">
+                                    <ul>
+                                        <li>
+                                            Registro de Despesas: Permite que os usuários informem detalhes sobre suas despesas, categorizando-as para uma melhor visualização.
+                                        </li>
+                                        <li>
+                                            Relatórios e Gráficos: O sistema gera relatórios em tempo real, permitindo que os usuários analisem seus gastos através de gráficos e tabelas (Frontend).
+                                        </li>
+                                        <li>
+                                            Autenticação de Usuários: Os usuários podem criar contas e fazer login, garantindo que seus dados sejam mantidos em segurança.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row mb-5">
+                                <h5 class="modal-title mb-5" id="exampleModalLabel">Conclusão : </h5>
+                                <div class="col-md-8">
+                                    <p class="mb-5">
+                                        ​O Sistema de Despesas Pessoais representa uma solução para quem deseja ter um maior controle sobre suas despesas pessoais. Com uma interface amigável e uma estrutura sólida, este projeto combina as melhores práticas de desenvolvimento web, oferecendo aos usuários uma ferramenta para o gerenciamento de suas despesas diárias. Estou entusiasmado com as possibilidades e melhorias futuras que podem ser inovadoras com o feedback dos usuários. Sinta-se à vontade para modificar ou adicionar informações que você achar conveniente! Se precisar de mais detalhes ou de outra parte do projeto, é só avisar.
+                                    </p>
+                                    <a href="https://github.com/Messier104ngcc" target="_blank" class="text-decoration-none">
+                                        <i class="bi bi-git mx-2"></i> Repositório Git
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
