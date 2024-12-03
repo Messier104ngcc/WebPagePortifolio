@@ -1,5 +1,88 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Contato";
 }
+
+
+<div class="container my-5 p-0">
+    <div id="home" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="container">          
+            <div class="col">
+                <h2 class="title d-flex justify-content-center">CONTATO</h2>
+                <div class="underline mb-5"></div>
+            </div>
+        </div>
+        <div class="container p-4">
+            <div id="colum" class="card p-0 row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
+                <div class="col-6 mb-5">
+                    <div class="card w-50 mb-5">
+                        <div class="card-body text-light d-flex justify-content-end" style="background-color: #086eba; font-weight:900">
+                            Vamos conectar
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                            <label for="floatingInput">Seu nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder=" ">
+                            <label for="floatingInput">Seu e-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                            <label for="floatingInput">Seu assunto</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Mensagem</label>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2 mb-lg-3">
+                            <button type="button" class="btn-home">Enviar</button>
+                        </div>
+                    </form>                  
+                </div>
+                <div class="col-lg-5 m-3">
+                    <h4 class="display-6">
+                        Informações de contato
+                    </h4>
+                    <br />
+                    
+                    <p class="lead">
+                        ​​Se você gostaria de saber mais sobre meus trabalhos e  projetos, não hesite em enviar uma mensagem. Adoraria ouvir de você e fornecer as informações que você precisa!
+                    </p>
+                    <br />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <i class="bi bi-envelope-fill" style="font-size: 48px;"></i>
+                            </div>
+                            <div class="col-sm-9 mb-3">
+                                <div class="row">
+                                    <div class="col-8 col-sm-9">
+                                        <h4>E-mail</h4>
+                                        <a class="text-decoration-none" href="mailto:messier104ngc4594@gmail.com?subject=Assunto&body=Mensagem">Messier104ngc4594@gmail.com</a>
+                                        <a class="text-decoration-none" href="mailto:messier104ngc4594@hotmail.com.com?subject=Assunto&body=Mensagem">Messier104ngc4594@hotmail.com</a>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <i class="bi bi-geo-alt-fill" style="font-size: 48px;"></i>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-8 col-sm-9">
+                                        <h4>Endereço</h4>
+                                        <p>
+                                            Rua joão XXIII, Primeiro de Maio, Brusque SC, 88353530
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

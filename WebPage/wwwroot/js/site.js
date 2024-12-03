@@ -1,4 +1,17 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+// Obtém a URL atual  
+const currentPath = window.location.pathname;
 
-// Write your JavaScript code.
+// Obtem todos os links de navegação  
+const navLinks = document.querySelectorAll('.nav');
+
+navLinks.forEach(link => {
+    // Compara o nome do arquivo na URL atual com o href do link  
+    const linkPath = link.getAttribute('href');
+
+    if (linkPath === currentPath) {
+        link.classList.add('active'); // Adiciona a classe 'active' apenas ao link correto  
+    } else {
+        link.classList.remove('active'); // Remove 'active' de outros links  
+    }
+});
