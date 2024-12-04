@@ -10,4 +10,12 @@
     <_ContentIncludedByDefault Remove="wwwroot\css\site2.css" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Arquivos\currículo.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+  </ItemGroup>
+
 </Project>

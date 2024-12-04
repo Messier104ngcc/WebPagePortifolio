@@ -1,6 +1,11 @@
-﻿@{
+﻿@model ContatoModel
+
+@{
     ViewData["Title"] = "Contato";
 }
+
+
+
 
 
 <div class="container my-5 p-0">
@@ -12,32 +17,50 @@
             </div>
         </div>
         <div class="container p-4">
-            <div id="colum" class="card p-0 row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3">
-                <div class="col-6 mb-5">
+            <div id="colum" class="card p-0 row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 ">
+                <div class="col-lg-6 mb-5">
                     <div class="card w-50 mb-5">
                         <div class="card-body text-light d-flex justify-content-end" style="background-color: #086eba; font-weight:900">
                             Vamos conectar
                         </div>
                     </div>
-                    <form>
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success" id="alert-success">
+                            @TempData["SuccessMessage"]
+                        </div>
+                    }
+                    <form asp-controller="Contato" asp-action="Contato" method="post">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                            <input type="text" asp-for="Nome" name="nome"  class="form-control" id="floatingInput" placeholder=" " required>
                             <label for="floatingInput">Seu nome</label>
+                            <div class="invalid-feedback">
+                                Digite um nome.
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder=" ">
+                            <input type="email" asp-for="Email" name="email" class="form-control" id="floatingInput" placeholder=" " required>
                             <label for="floatingInput">Seu e-mail</label>
+                            <div class="invalid-feedback">
+                                Digite um email.
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder=" ">
+                            <input type="text" asp-for="Assunto" name="assunto" class="form-control" id="floatingInput" placeholder=" " required>
                             <label for="floatingInput">Seu assunto</label>
+                            <div class="invalid-feedback">
+                                Digite um assunto.
+                            </div>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <textarea class="form-control" asp-for="Mensagem" name="mensagem" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
                             <label for="floatingTextarea2">Mensagem</label>
+                            <div class="invalid-feedback">
+                                Digite uma mensagem.
+                            </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2 mb-lg-3">
-                            <button type="button" class="btn-home">Enviar</button>
+                            <button type="submit" onclick="showModal()" class="btn-home">Enviar</button>
                         </div>
                     </form>                  
                 </div>
@@ -85,4 +108,6 @@
         </div>
     </div>
 </div>
+
+<script src="/js/site.js" asp-append-version="true"></script>
 

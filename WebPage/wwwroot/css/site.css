@@ -126,3 +126,27 @@ img {
 #colum {
     flex-direction:row;
 }
+
+
+/*CSS do estilo da menssagem sucesso do formulario de contato.*/
+
+/*.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+} */

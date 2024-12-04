@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Grpc.Core;
+using System.IO;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebPage.Models;
+using Microsoft.Extensions.Hosting.Internal;
 
 namespace WebPage.Controllers
 {
@@ -28,5 +32,5 @@ namespace WebPage.Controllers
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 		}
-	}
+    }
 }

@@ -15,3 +15,14 @@ navLinks.forEach(link => {
         link.classList.remove('active'); // Remove 'active' de outros links  
     }
 });
+
+
+
+/*Mensagem de sucesso do formulario de contato.*/
+
+setTimeout(function () {
+    var alertElement = document.getElementById('alert-success');
+    if (alertElement) {
+        alertElement.style.display = 'none';
+    }
+}, 3000);
